@@ -1,0 +1,51 @@
+#page-site-index .dashboard-card .dashboard-card-img .course-category {
+    visibility: hidden;
+}
+
+#page-site-index .dashboard-card-deck .dashboard-card .dashboard-card-img {
+    width: 100%!important;
+    height: 300%!important;
+}
+
+#page-site-index .dashboard-card-deck .dashboard-card .dashboard-card-img {
+    position: relative; /* Adjust if necessary */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Adjust height as needed */
+    padding-top: 10rem; /* Only top padding */
+    padding-right: 10rem; /* Only right padding */
+    padding-bottom: 10rem; /* Only bottom padding */
+    padding-left: 10rem; /* Only left padding */
+}
+
+#page-site-index .dashboard-card-deck .dashboard-card .dashboard-card-img {
+    position: relative; /* Adjust if necessary */
+    width: 600px!important; /* Full width of the container */
+    height: 200px!important; /* Adjust height as needed */
+}
+
+#page-site-index .dashboard-card-deck .dashboard-card {
+width: 600px!important; /* Full width of the container */
+    height: 300px!important; /* Adjust height as needed */
+}
+
+#page-site-index .dashboard-card-deck .dashboard-card .dashboard-card-img {
+    position: relative; /* Adjust if necessary */
+    width: 100%!important; /* Full width of the container */
+    height: 100%!important; /* Adjust height as needed */
+    background-size: cover!important;
+    background-position: center!important;
+    padding-top: 11rem!important;
+}
+
+#page-site-index .dashboard-card {
+
+}
+
+#page-site-index .dashboard-card-deck .dashboard-card {
+    width: 400px!important; /* Fixed width */
+    height: 200px!important; /* Fixed height */
+}
+
+#page-site-index .card .card-body {
+
+}
