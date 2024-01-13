@@ -1,0 +1,59 @@
+#page-site-index.notloggedin .navbar.fixed-top .navbar-brand .logo {
+    //display:none!important;
+    }
+    
+    #page-site-index.notloggedin .langmenu {
+    //display:none!important;
+    }
+    #page-site-index.notloggedin .navbar.fixed-top {
+    //display:none!important;
+                background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%);
+                text-transform: uppercase;
+                transition: 0.5s;
+                background-size: 200% auto;
+                box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    #page-site-index.notloggedin .navbar.fixed-top:hover {
+        background-position: right center;
+        color: #fff!important;
+        text-decoration: none;
+    }
+    
+    #page-site-index.notloggedin .navbar.fixed-top a {
+    color: #fff!important;
+    font-size: 16px; /* Standard font size */
+    font-weight: 700 !important; /* Bold font weight */
+    }
+    
+    
+    #page-wrapper #page-footer {
+    display: none;
+    }
+    
+    #page-footer .copyright .madeby {
+    display: none;
+    }
+    #page-site-index a {
+    }
+    #page-footer .btn-footer-popover{
+    display: none;
+    }
+    
+    #page-footer .column-right{
+    display: none;
+    }
+    
+    #page-site-index .card-body {
+    text-align: center;
+    }
+    
+    #page-site-index .dashboard-card .dashboard-card-img .course-category {
+    display: none;
+    }
+    
+    #page-site-index .pagelayout-frontpage .dashboard-card {
+    }
+    
+    #page-site-index main {
+    }

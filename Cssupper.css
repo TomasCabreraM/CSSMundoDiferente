@@ -1,11 +1,28 @@
-#page-wrapper #page-footer {
+#page-site-index.notloggedin .navbar.fixed-top {
+    //display:none!important;
+    background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%);
+    text-decoration: none;
+    }
+    
+    #page-site-index.notloggedin .navbar.fixed-top:hover {
+                background-position: right center; /* change the direction of the change here */
+                color: #fff;
+                text-decoration: none;
+              }
+    #page-site-index.notloggedin .navbar.fixed-top a {
+    color: #fff !important;
+              }
+    
+    
+    #page-wrapper #page-footer {
     display: none;
     }
     
     #page-footer .copyright .madeby {
     display: none;
     }
-    
+    #page-site-index a {
+    }
     #page-footer .btn-footer-popover{
     display: none;
     }
@@ -27,5 +44,3 @@
     
     #page-site-index main {
     }
-    
-    
