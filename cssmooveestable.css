@@ -1,0 +1,120 @@
+#page-site-index .activity-item {
+    position: relative; /* Required for z-index to take effect */
+    z-index: 1000; /* High value to bring it to the top */
+}
+
+
+#page-site-index #myTransparentDiv1{
+}
+#page-site-index #myTransparentDiv{
+}
+
+body#page-site-index:not(.notloggedin) #myTransparentDiv1{
+}
+
+body#page-site-index:not(.notloggedin) #myTransparentDiv{
+}
+
+#page-wrapper{
+}
+
+#page-site-index #topofscroll {
+}
+
+#page-site-index * {
+}
+
+#page-site-index .dashboard-card-img {
+z-index: 4;
+box-shadow: 4px 4px 5px rgba(0,0,0,0.2);
+}
+
+#page-site-index .card-body {
+    z-index: 3;
+    color: #fff !important;
+    font-size: 16px; /* Standard font size */
+    font-weight: 700 !important; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Indicates it's clickable */
+    background-image: linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%);
+    background-size: 200% auto;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.5s ease; /* Smooth transition for hover effects */
+    display: block;
+    text-decoration: none;
+}
+
+#page-site-index .card-body:hover {
+    background-position: right center; /* Change the direction of the gradient on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-color: #ccc; /* Darker border on hover */
+    color: #fff !important;
+}
+#page-site-index .card-body a {
+text-decoration: none;
+ color: #fff !important;
+}
+
+#page-site-index .activity{
+}
+#page-site-index.notloggedin .navbar.fixed-top .navbar-brand .logo {
+display:none!important;
+}
+#page-site-index.notloggedin #topofscroll #frontpage-available-course-list h2{
+display:none!important;
+}
+#page-site-index.notloggedin .dropdown{
+display:none!important;
+}
+#page-site-index.notloggedin .navbar.fixed-top {
+//display:none!important;
+            background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%);
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+#page-site-index.notloggedin .navbar.fixed-top:hover {
+    background-position: right center;
+    color: #fff!important;
+    text-decoration: none;
+}
+
+#page-site-index.notloggedin .navbar.fixed-top a {
+color: #fff!important;
+font-size: 16px; /* Standard font size */
+font-weight: 700 !important; /* Bold font weight */
+}
+
+#page-wrapper #page-footer {
+display: none;
+}
+
+#page-footer .copyright .madeby {
+display: none;
+}
+#page-site-index a {
+}
+#page-footer .btn-footer-popover{
+display: none;
+}
+
+#page-footer .column-right{
+display: none;
+}
+
+#page-site-index .card-body {
+text-align: center;
+}
+
+#page-site-index .dashboard-card .dashboard-card-img .course-category {
+display: none;
+}
+
+#page-site-index .pagelayout-frontpage .dashboard-card {
+}
+
+#page-site-index main {
+}
