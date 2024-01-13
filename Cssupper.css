@@ -1,0 +1,31 @@
+#page-wrapper #page-footer {
+    display: none;
+    }
+    
+    #page-footer .copyright .madeby {
+    display: none;
+    }
+    
+    #page-footer .btn-footer-popover{
+    display: none;
+    }
+    
+    #page-footer .column-right{
+    display: none;
+    }
+    
+    #page-site-index .card-body {
+    text-align: center;
+    }
+    
+    #page-site-index .dashboard-card .dashboard-card-img .course-category {
+    display: none;
+    }
+    
+    #page-site-index .pagelayout-frontpage .dashboard-card {
+    }
+    
+    #page-site-index main {
+    }
+    
+    

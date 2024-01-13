@@ -1,0 +1,72 @@
+#page-wrapper #page-footer {
+    display: none;
+    }
+    
+    #page-footer .copyright .madeby {
+    display: none;
+    }
+    
+    #page-footer .btn-footer-popover{
+    display: none;
+    }
+    
+    #page-footer .column-right{
+    display: none;
+    }
+    
+    #page-site-index .card-body {
+    text-align: center;
+    }
+    
+    #page-site-index .dashboard-card .dashboard-card-img .course-category {
+    display: none;
+    }
+    
+    #page-site-index .pagelayout-frontpage .dashboard-card {
+    }
+    
+    #page-site-index main {
+    }
+    
+    #page-site-index #topofscroll {
+        background-color: red!important;
+    }
+
+    #page-site-index a {
+    }
+    
+    #page-site-index .dashboard-card-deck .dashboard-card .dashboard-card-img {
+    }
+    
+    #page-site-index.not-logged-in #topofscroll #page-content {
+        width: 100vw!important;
+        height: 100%!important;
+        position: absolute!important; /* or 'absolute' depending on your layout */
+        background-color:red!important;
+        padding-top: 0rem!important;
+        padding-left:0px!important;
+        padding-right:0px!important;
+        padding-bottom:0px!important;
+        left: 0!important;
+        right: 0!important;
+    }
+    
+    #page-site-index .course-search-result{
+        margin-top: 0rem!important;
+    }
+    
+    #page-site-index #page-wrapper {
+    }
+    
+    #page-site-index #region-main-box {
+    
+    }
+    
+    #page-site-index .card-deck {
+    }
+    
+    #page-site-index #topofscroll #region-main {
+    }
+    #page-site-index #page.drawers div[role="main"]{
+    
+    }

@@ -1,0 +1,68 @@
+<p>
+  <script>
+    // Create the element
+    var transparentDiv = document.createElement('div');
+
+    // Assign an ID to the element
+    transparentDiv.id = 'myTransparentDiv';
+
+    // Apply CSS styles
+    transparentDiv.style.position = 'fixed';
+    transparentDiv.style.top = '0';
+    transparentDiv.style.left = '0';
+    transparentDiv.style.width = '100vw';
+    transparentDiv.style.height = '100vh';
+    transparentDiv.style.backgroundColor =
+      'rgba(0, 0, 0, 0)'; // Completely transparent
+    transparentDiv.style.zIndex = '-1000';
+    transparentDiv.style.pointerEvents = 'none'; // Allow clicks to pass through
+
+    // Append the element to the body
+    document.body.appendChild(transparentDiv);
+  </script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js">
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js">
+  </script>
+  <script>
+    VANTA.BIRDS({
+      el: "#myTransparentDiv",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      birdSize: 0.90,
+      wingSpan: 12.00,
+      speedLimit: 2.00,
+      separation: 75.00,
+      alignment: 100.00,
+      cohesion: 100.00,
+      quantity: 3.00,
+      backgroundAlpha: 0.00
+    })
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Select all elements
+      var allElements = document.querySelectorAll('*');
+
+      allElements.forEach(function(el) {
+        // Get computed style of the element
+        var style = window.getComputedStyle(el);
+
+        // Check if background-image is set and not 'none'
+        if (!style.backgroundImage || style.backgroundImage ===
+          'none') {
+          // Set background to transparent
+          el.style.background = 'transparent !important';
+        }
+      });
+    });
+  </script>
+</p>
+<p> </p>

@@ -1,0 +1,118 @@
+.selector {
+    /* Dimensiones y espaciado */
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+
+    /* Color y fondo */
+    background-color: #f0f0f0;
+    color: #333333;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+
+    /* Texto */
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase; /* Opciones: none, capitalize, uppercase, lowercase */
+    text-decoration: none; /* Opciones: none, underline, overline, line-through */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    word-spacing: 2px; /* Espaciado entre palabras */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+
+    /* Layout y posicionamiento */
+    display: flex; /* Opciones: block, inline, inline-block, flex, grid, etc. */
+    flex-direction: row; /* Opciones: row, row-reverse, column, column-reverse */
+    justify-content: center; /* Alineación horizontal en flexbox */
+    align-items: center; /* Alineación vertical en flexbox */
+    align-self: auto; /* Alineación individual en flexbox */
+    flex-wrap: nowrap; /* Ajuste de elementos flex */
+    gap: 10px; /* Espacio entre elementos en flexbox o grid */
+    position: relative; /* Opciones: static, relative, absolute, fixed, sticky */
+    z-index: 10;
+    overflow: hidden; /* Opciones: visible, hidden, scroll, auto */
+    box-sizing: border-box; /* Opciones: content-box, border-box */
+
+    /* Efectos visuales */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    border-collapse: collapse; /* Para tablas */
+    border-spacing: 5px; /* Para tablas */
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    /* Pseudoclases y pseudoelementos */
+    &:hover {
+        background-color: #e0e0e0;
+    }
+    &:before {
+        content: "";
+        display: block;
+    }
+    &:after {
+        content: "";
+        display: block;
+    }
+}
+.selector {
+    /* Dimensiones y espaciado */
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+
+    /* Color y fondo */
+    background-color: #f0f0f0;
+    color: #333333;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+
+    /* Texto */
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase; /* Opciones: none, capitalize, uppercase, lowercase */
+    text-decoration: none; /* Opciones: none, underline, overline, line-through */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    word-spacing: 2px; /* Espaciado entre palabras */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+
+    /* Layout y posicionamiento */
+    display: flex; /* Opciones: block, inline, inline-block, flex, grid, etc. */
+    flex-direction: row; /* Opciones: row, row-reverse, column, column-reverse */
+    justify-content: center; /* Alineación horizontal en flexbox */
+    align-items: center; /* Alineación vertical en flexbox */
+    align-self: auto; /* Alineación individual en flexbox */
+    flex-wrap: nowrap; /* Ajuste de elementos flex */
+    gap: 10px; /* Espacio entre elementos en flexbox o grid */
+    position: relative; /* Opciones: static, relative, absolute, fixed, sticky */
+    z-index: 10;
+    overflow: hidden; /* Opciones: visible, hidden, scroll, auto */
+    box-sizing: border-box; /* Opciones: content-box, border-box */
+
+    /* Efectos visuales */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    border-collapse: collapse; /* Para tablas */
+    border-spacing: 5px; /* Para tablas */
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    /* Pseudoclases y pseudoelementos */
+    &:hover {
+        background-color: #e0e0e0;
+    }
+    &:before {
+        content: "";
+        display: block;
+    }
+    &:after {
+        content: "";
+        display: block;
+    }
+}

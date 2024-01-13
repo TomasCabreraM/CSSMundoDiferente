@@ -1,0 +1,40 @@
+#page-wrapper{
+}
+
+#page-site-index #topofscroll {
+}
+
+#page-site-index * {
+}
+
+#page-site-index .dashboard-card-img {
+z-index: 3;
+box-shadow: 4px 4px 5px rgba(0,0,0,0.2);
+}
+
+#page-site-index .card-body {
+    z-index: 2;
+    color: #fff !important;
+    font-size: 16px; /* Standard font size */
+    font-weight: 700 !important; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Indicates it's clickable */
+    background-image: linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%);
+    background-size: 200% auto;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.5s ease; /* Smooth transition for hover effects */
+    display: block;
+    text-decoration: none;
+}
+
+#page-site-index .card-body:hover {
+    background-position: right center; /* Change the direction of the gradient on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-color: #ccc; /* Darker border on hover */
+    color: #fff !important;
+}
+#page-site-index .card-body a {
+text-decoration: none;
+ color: #fff !important;
+}
