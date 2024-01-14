@@ -1,67 +1,177 @@
-<p>
-  <script>
-    // Create the element
-    var transparentDiv = document.createElement('div');
 
-    // Assign an ID to the element
-    transparentDiv.id = 'myTransparentDiv';
+<script>
+// Create the element
+var transparentDiv = document.createElement('div');
 
-    // Apply CSS styles
-    transparentDiv.style.position = 'fixed';
-    transparentDiv.style.top = '0';
-    transparentDiv.style.left = '0';
-    transparentDiv.style.width = '100vw';
-    transparentDiv.style.height = '100vh';
-    transparentDiv.style.backgroundColor =
-      'rgba(0, 0, 0, 0)'; // Completely transparent
-    transparentDiv.style.zIndex = '-1000';
-    transparentDiv.style.pointerEvents = 'none'; // Allow clicks to pass through
+// Assign an ID to the element
+transparentDiv.id = 'myTransparentDiv1';
 
-    // Append the element to the body
-    document.body.appendChild(transparentDiv);
-  </script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js">
-  </script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js">
-  </script>
-  <script>
-    VANTA.BIRDS({
-      el: "#myTransparentDiv",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      birdSize: 0.90,
-      wingSpan: 12.00,
-      speedLimit: 2.00,
-      separation: 75.00,
-      alignment: 100.00,
-      cohesion: 100.00,
-      quantity: 3.00,
-      backgroundAlpha: 0.00
-    })
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Select all elements
-      var allElements = document.querySelectorAll('*');
+// Apply CSS styles
+transparentDiv.style.position = 'fixed';
+transparentDiv.style.top = '0';
+transparentDiv.style.left = '0';
+transparentDiv.style.width = '100vw';
+transparentDiv.style.height = '100vh';
+transparentDiv.style.backgroundColor =
+  'rgba(0, 0, 0, 0)'; // Completely transparent
+transparentDiv.style.zIndex = '0';
+transparentDiv.style.pointerEvents = 'none'; // Allow clicks to pass through
 
-      allElements.forEach(function(el) {
-        // Get computed style of the element
-        var style = window.getComputedStyle(el);
+// Append the element to the body
+document.body.appendChild(transparentDiv);
+</script>
+<script>
+// Create the element
+var transparentDiv = document.createElement('div');
 
-        // Check if background-image is set and not 'none'
-        if (style.backgroundImage === 'none') {
-          // Set background to transparent
-          el.style.background = 'transparent';
-        }
-      });
-    });
-  </script>
-</p>
-<p> </p>
+// Assign an ID to the element
+transparentDiv.id = 'myTransparentDiv';
+
+// Apply CSS styles
+transparentDiv.style.position = 'fixed';
+transparentDiv.style.top = '0';
+transparentDiv.style.left = '0';
+transparentDiv.style.width = '100vw';
+transparentDiv.style.height = '100vh';
+transparentDiv.style.backgroundColor =
+  'rgba(0, 0, 0, 0)'; // Completely transparent
+transparentDiv.style.zIndex = '1';
+transparentDiv.style.pointerEvents = 'none'; // Allow clicks to pass through
+
+// Append the element to the body
+document.body.appendChild(transparentDiv);
+</script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js">
+</script>
+<script
+src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js">
+</script>
+<script>
+VANTA.BIRDS({
+  el: "#myTransparentDiv",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  birdSize: 1.20,
+  wingSpan: 12.00,
+  speedLimit: 3.00,
+  separation: 75.00,
+  alignment: 100.00,
+  cohesion: 100.00,
+  quantity: 4.00,
+  backgroundAlpha: 0.00
+})
+</script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js">
+</script>
+<script
+src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js">
+</script>
+<script>
+VANTA.CLOUDS({
+  el: "#myTransparentDiv1",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00
+})
+</script>
+<script>
+
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var allElements = document.querySelectorAll('*');
+  console.log("Z-Index values of all elements:");
+
+  allElements.forEach(function(el) {
+    var zIndex = window.getComputedStyle(el).zIndex;
+    if (zIndex !== 'auto') {
+      console.log(el.tagName + (el.id ? '#' + el.id : '') + (el
+        .className ? '.' + el.className.split(' ').join('.') :
+        '') + ' - z-index: ' + zIndex);
+    }
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var elements = document.querySelectorAll(
+    '.dashboard-card-img'); // Replace with your element's class
+
+  // Function to apply hover styles
+  function applyHoverStyle() {
+    this.style.color = '#fff';
+    this.style.backgroundColor = '#000';
+    this.style.transform = 'scale(1.1)';
+    this.style.borderColor = 'red';
+    // Add more styles or effects as needed
+  }
+
+  // Function to reset styles
+  function resetStyle() {
+    this.style.color = '#000';
+    this.style.backgroundColor = '#fff';
+    this.style.transform = 'scale(1)';
+    this.style.borderColor = 'black';
+    // Reset other styles or effects as needed
+  }
+
+  // Apply initial styles and event listeners to each element
+  elements.forEach(function(element) {
+    // Initial Style
+    element.style.transition = 'all 0.3s ease';
+    element.style.padding = '10px';
+    element.style.border = '2px solid black';
+    element.style.cursor = 'pointer';
+
+    // Event listeners for hover effects
+    element.addEventListener('mouseover', applyHoverStyle);
+    element.addEventListener('mouseout', resetStyle);
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var formalElements = document.querySelectorAll(
+    '.card-body'); // Replace with your element's class
+
+  // Function to apply formal hover styles
+  function applyFormalHoverStyle() {
+    this.style.backgroundColor = '#f0f0f0'; // Light grey background
+    this.style.boxShadow =
+      '0 4px 8px rgba(0, 0, 0, 0.1)'; // Subtle shadow for depth
+    this.style.transform =
+      'translateY(-2px)'; // Slightly raise the element
+    // Add more styles or effects as needed
+  }
+
+  // Function to reset styles
+  function resetFormalStyle() {
+    this.style.backgroundColor = '#fff'; // Reset to white background
+    this.style.boxShadow = 'none'; // Remove shadow
+    this.style.transform = 'translateY(0)'; // Reset position
+    // Reset other styles or effects as needed
+  }
+
+  // Apply initial styles and event listeners to each formal element
+  formalElements.forEach(function(element) {
+    // Initial Style
+    element.style.transition = 'all 0.3s ease';
+    element.style.padding = '10px';
+    element.style.border = '1px solid #ddd'; // Light border
+    element.style.cursor = 'pointer';
+
+    // Event listeners for formal hover effects
+    element.addEventListener('mouseover', applyFormalHoverStyle);
+    element.addEventListener('mouseout', resetFormalStyle);
+  });
+});
+</script>
