@@ -1,0 +1,934 @@
+#page-course-view-topics .activity-item img{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    #page-course-view-topics .activityiconcontainer.smaller .activityicon {
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    #page-course-view-topics .section .activity{
+    padding: 1px;
+    }
+    
+    #page-course-view-topics .activity-item .activity-altcontent.activity-description{
+    padding-top: 0px;
+    margin-top: 2px;
+    border:0px;
+    }
+    
+    #page-course-view-topics p{
+    margin-bottom:0px;
+    }
+    
+    #page-course-view-topics .activity-item:not(.activityinline){
+    padding: 5px;
+    margin: 5px 0;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border:0px;
+    }
+    
+    a[title="Salir de la actividad"] {
+      position: fixed; /* Fix position to the viewport */
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Adjust for exact centering */
+      z-index: 1000; /* Ensure it's above other content */
+      background-color: #007bff; /* Example: Bright blue */
+      color: #ffffff; /* White text */
+      padding: 30px; /* Larger padding */
+      border: 2px solid #0056b3; /* Solid border for more emphasis */
+      font-size: 40px; /* Larger text */
+      transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+    
+    a[title="Salir de la actividad"]:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+      color: #fff; /* Maintain white text color on hover for consistency */
+    }
+    
+    #page-course-view-topics .activity-item.activityinline{
+    padding:5px;
+    }
+    
+     #page-course-view-topics .fa.fa-circle-thin:before {
+     color: red;
+        font-weight: bolder;
+    }
+    
+    #page-course-view-topics .activity-item .no-overflow{
+    overflow: visible;
+    }
+    .cool-gradient2 {
+      background: linear-gradient(45deg, #2D432A, #63854a);
+      border-radius: 5px;
+      box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.2);
+      padding: 10px !important;
+      margin: 5px;
+    flex-wrap: wrap;
+    }
+    
+    #exTab3 .nav-pills li {
+    padding: 20px 0px 0px 0px;
+    align-items:center;
+    }
+    
+    #page-course-view-topics .courseindex .courseindex-section .courseindex-sectioncontent .courseindex-item a {
+      font-size:18px;
+    font-weight: 100;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      text-overflow: clip; /* Prevents "..." */
+      overflow: visible; /* Allows text to overflow its container visibly */
+      display: inline-block; /* or 'block' might be necessary depending on your layout */
+      max-width: 100%; /* Ensures the link does not exceed its parent's width */
+      letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+      text-decoration: underline; /* Subraya el texto */
+    }
+    
+    #page-course-view-topics .courseindex .courseindex-section .courseindex-sectioncontent .courseindex-item a {
+      position: relative; /* Esencial para posicionar correctamente el pseudo-elemento */
+      padding-left: 20px; /* Asegura espacio para el pseudo-elemento (ajusta según necesidad) */
+    }
+    
+    #page-course-view-topics .courseindex .courseindex-section .courseindex-sectioncontent .courseindex-item a::before {
+      content: '•'; /* Carácter de punto (bullet) */
+      position: absolute;
+      left: 0;
+      color: #FF5733; /* Ajusta al color deseado */
+      font-size: 20px; /* Ajusta según la apariencia deseada */
+      top: 0; /* Ajusta según sea necesario para alinear con el texto */
+    }
+    
+    #page-site-index .course-summary{
+    display:none;
+    }
+    
+    #frontpage-category-names .content {
+        column-count: 4; /* Ajusta a 4 columnas */
+        column-gap: 5px; /* Espacio entre columnas */
+        max-width: 800px; /* Ancho máximo del contenedor */
+        margin: 5px auto; /* Centrar el contenedor */
+    }
+    
+    #frontpage-category-names .category {
+        break-inside: avoid-column; /* Mejor soporte para evitar divisiones */
+        margin-bottom: 20px; /* Espaciado entre categorías */
+        padding: 10px;
+        background: #ffffff;
+        border: 1px solid #e1e1e1;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        display: flex; /* Cambiado a flex para permitir alineación interna */
+        flex-direction: column; /* Orientación vertical de los elementos internos */
+        justify-content: center; /* Centra el contenido verticalmente */
+        align-items: center; /* Centra el contenido horizontalmente */
+        height: 100%; /* Asegura que tome toda la altura disponible */
+        width: 100%; /* Asegura que tome todo el ancho de la columna */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición de transformación y sombra */
+        cursor: pointer; /* Cambia el cursor a una mano para indicar que es interactivo */
+    }
+    
+    #frontpage-category-names .categoryname a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        display: block; /* Mantiene el enlace como bloque */
+        text-align: center; /* Alinea el texto al centro */
+        transition: color 0.3s ease;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.2em; /* Ajusta esto según el tamaño de tu fuente */
+        max-height: 2.4em; /* Basado en el line-height para 2 líneas */
+        font-size: 1rem; /* Tamaño inicial de la fuente */
+    }
+    
+    #frontpage-category-names .categoryname a:hover {
+        color: #007bff;
+    }
+    
+    #frontpage-category-names .category:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Ajustes responsivos para el tamaño de la fuente */
+    @media (max-width: 768px) {
+        #frontpage-category-names .content {
+            column-count: 2; /* Ajusta a 2 columnas para pantallas medianas */
+        }
+    
+        #frontpage-category-names .categoryname a {
+            font-size: 0.9rem; /* Reduce el tamaño de la fuente para mejorar la legibilidad */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        #frontpage-category-names .content {
+            column-count: 1; /* Ajusta a 1 columna para pantallas pequeñas */
+        }
+    
+        #frontpage-category-names .categoryname a {
+            font-size: 0.8rem; /* Reduce aún más el tamaño de la fuente para pantallas pequeñas */
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    #frontpage-category-names .collapsible-actions{
+    display:none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #page-site-index br{
+    display:none;
+    }
+    
+    #page-site-index #page-header{
+    display:none;
+    }
+    
+    #page-site-index .info{
+    text-align:center;
+    }
+    
+    #frontpage-category-names > h2{
+    display:none;
+    }
+    
+    #frontpage-category-names > div > div.content > div .content{
+    display:none;
+    }
+    
+    #page-site-index.notloggedin #topofscroll #page-content{
+    background-color: transparent!important;
+    }
+    
+    #myTransparentDiv {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+       z-index:-3000;
+        pointer-events: none; /* Allow clicks to pass through */
+    }
+    #myTransparentDiv1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index:-3000;
+        pointer-events: none; /* Allow clicks to pass through */
+    }
+    
+    #page-site-index #page-content{
+    
+    }
+    
+    #page-site-index #topofscroll{
+    background-color: transparent!important;
+    padding:0px;
+    }
+    
+    #page-site-index.notloggedin #topofscroll{
+    background-color: transparent!important;
+    z-index: 1;
+    }
+    
+    #page-site-index #region-main{
+    background-color: transparent!important;
+    }
+    
+    #page-site-index.notloggedin #region-main{
+    background-color: transparent!important;
+    z-index:1;
+    }
+    
+    #page-site-index #region-main-box{
+    background-color: transparent!important;
+    }
+    
+    #page-site-index.notloggedin #region-main-box{
+    background-color: transparent!important;
+    z-index:1;
+    }
+    .activity-item .activity-completion button.btn, .activity-item .activity-completion a[role="button"].btn-success{
+      background-color: #51ab35;
+      color: #ffffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    #theme_boost-drawers-courseindex .btn{
+    background:white;
+    }
+    
+    #theme_boost-drawers-courseindex{
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    color:black;
+    }
+    
+    #theme_boost-drawers-courseindex a{
+    color: rgb(255, 255, 255);
+    }
+    
+    .course-section-header h3{
+    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000; /* White text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: #000000;
+    }
+    
+    .course-section-header h3:hover{
+    background-color: #2980b9; /* Darker blue on hover */
+    color: #342ee0; /* Lighter text on hover */
+    scale: 1.01;
+    }
+    
+    .container1 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      /* Center horizontally */
+      align-items: center;
+      /* Center vertically */
+    }
+    
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+      }
+    
+      .columna-izquierda,
+      .columna-derecha {
+        width: 50%;
+      }
+    }
+    
+    .columna-izquierda,
+    .columna-derecha {
+      padding: 0px 0px 0px 10px;
+      margin-bottom: 0px;
+    }
+    
+    .cool-gradient1 {
+      background: linear-gradient(45deg, #27355A, #4a668c);
+      border-radius: 5px;
+      box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.2);
+      padding: 10px !important;
+      margin: 5px;
+    }
+    
+    .cool-gradient3 {
+      background: linear-gradient(to right, rgb(255, 78, 80), rgb(255, 78, 80));
+      border-radius: 5px;
+      box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.2);
+      padding: 10px !important;
+      margin: 5px;
+    }
+    
+    .cool-gradient4 {
+      background: linear-gradient(45deg, #53377A, #805d9d);
+      border-radius: 5px;
+      box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.2);
+      padding: 10px !important;
+      margin: 5px;
+    }
+    .cool-gradient5 {
+      background: linear-gradient(45deg, #1B3B3F, #2C5661);
+      border-radius: 5px;
+      box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.2);
+      padding: 10px !important;
+      margin: 5px;
+    }
+    .cool-gradient6 {
+      background: linear-gradient(45deg, #d29212, #5e2729);
+      border-radius: 5px;
+      box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.2);
+      padding: 10px !important;
+      margin: 5px;
+    }
+    
+    .cool-gradient1.active {
+      background: linear-gradient(to right, #ad5389, #3c1053);
+    /* Optionally adjust other properties like box-shadow or border */
+    }
+    .cool-gradient2.active {
+      background: linear-gradient(to right, #ad5389, #3c1053);
+    /* Optionally adjust other properties like box-shadow or border */
+    }
+    .cool-gradient4.active {
+      background: linear-gradient(to right, #ad5389, #3c1053);
+    /* Optionally adjust other properties like box-shadow or border */
+    }
+    .cool-gradient5.active {
+      background: linear-gradient(to right, #ad5389, #3c1053);
+    /* Optionally adjust other properties like box-shadow or border */
+    }
+    .cool-gradient6.active {
+      background: linear-gradient(to right, #ad5389, #3c1053);
+    /* Optionally adjust other properties like box-shadow or border */
+    }
+    
+    .cool-gradient1:hover {
+      background-color: #4286f4;
+      /* Lighter blue on hover */
+      opacity: 0.85;
+      /* Slight transparency for softness */
+    }
+    
+    .cool-gradient2:hover {
+      background-color: #4286f4;
+      /* Lighter blue on hover */
+      opacity: 0.85;
+      /* Slight transparency for softness */
+    }
+    
+    .cool-gradient3:hover {
+      background-color: #4286f4;
+      /* Lighter blue on hover */
+      opacity: 0.85;
+      /* Slight transparency for softness */
+    }
+    
+    .cool-gradient4:hover {
+      background-color: #4286f4;
+      /* Lighter blue on hover */
+      opacity: 0.85;
+      /* Slight transparency for softness */
+    }
+    .cool-gradient5:hover {
+      background-color: #4286f4;
+      /* Lighter blue on hover */
+      opacity: 0.85;
+      /* Slight transparency for softness */
+    }
+    .cool-gradient6:hover {
+      background-color: #4286f4;
+      /* Lighter blue on hover */
+      opacity: 0.85;
+      /* Slight transparency for softness */
+    }
+    
+    #listaBoots li a {
+      text-decoration: none !important;
+      font-weight: 700;
+      padding: 0px;
+      /* Adjust padding as needed */
+      /* color:black; */
+      color: white;
+      /* color: black; */
+    }
+    
+    #listaBoots li a:first-child {
+      /* For Overview tab */
+      text-decoration: none;
+      /* Remove default underline */
+    }
+    
+    #listaBoots {
+      justify-content: center;
+    }
+    
+    #exTab3 #listaBoots {
+      list-style-type: none;
+      /* Hide markers completely */
+    }
+    
+    #exTab3 #lista {
+      border-radius: 4px 4px 0 0 !important;
+    }
+    
+    #exTab3 .tab-content {
+      color: black;
+      /* Remove unnecessary !important */
+      padding: 5px 15px 5px 5px;
+      /* Remove unnecessary !important */
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      /* Subtle drop shadow */
+      background: linear-gradient(to bottom, #f5f5f5, #fff);
+      margin: 10px;
+    }
+    
+    #page-site-index.notloggedin #topofscroll #page-content {
+      padding-top: 0px !important;
+      padding-botton: 0px !important;
+    }
+    
+    #page-site-index .course-content ul.topics li.section {
+      padding:0px;
+    }
+    
+    #page-site-index .section .activity{
+    padding:0px;
+    }
+    #page-site-index .activity-item {
+      /* High value to bring it to the top */
+      padding: 0px;
+    
+    }
+    
+    
+    #page-site-index .dashboard-card-img {
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    #page-site-index .card-body {
+      color: #fff !important;
+      font-size: 16px;
+      /* Standard font size */
+      font-weight: 700 !important;
+      /* Bold font weight */
+      text-transform: uppercase;
+      /* Uppercase text */
+      cursor: pointer;
+      /* Indicates it's clickable */
+      background-image: linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%);
+      background-size: 200% auto;
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: all 0.5s ease;
+      /* Smooth transition for hover effects */
+      display: block;
+      text-decoration: none;
+      vertical-align: middle;
+    }
+    
+    #page-site-index .card-body:hover {
+      background-position: right center;
+      /* Change the direction of the gradient on hover */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      /* Subtle shadow for depth */
+      border-color: #ccc;
+      /* Darker border on hover */
+      color: #fff !important;
+    }
+    
+    #page-site-index .card-body a {
+      text-decoration: none;
+      color: #fff !important;
+    }
+    
+    #page-site-index .activity {}
+    
+    #page-site-index.notloggedin .navbar.fixed-top .navbar-brand .logo {
+    }
+    
+    #page-site-index.notloggedin #topofscroll #frontpage-available-course-list h2 {
+      display: none !important;
+    }
+    
+    #page-site-index.notloggedin .dropdown {
+      display: none !important;
+    }
+    
+        #page-course-search h2{
+        text-align:center;
+        }
+        
+        #page-course-search .navbar.fixed-top {
+         background-image: linear-gradient(to right, #b3b3ff, #8080ff);
+          text-transform: uppercase;
+          transition: 0.5s;
+          background-size: 200% auto;
+          box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        #page-course-search .navbar.fixed-top a {
+          color: black !important;
+          font-size: 16px;
+          /* Standard font size */
+          font-weight: 700 !important;
+          /* Bold font weight */
+        }
+        
+        #page-course-search .navbar.fixed-top:hover {
+          background-position: right center;
+          color:linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4)!important;
+          text-decoration: none;
+        }
+    
+        #page-course-search .card-body {
+          text-align: center !important;
+        }
+        
+        #page-course-search .dashboard-card .dashboard-card-img .course-category {
+          display: none;
+        }
+    
+        #page-course-search .card-body a {
+        text-decoration: none;
+        color: #fff !important;
+      }
+    
+      #page-course-search .dashboard-card-img {
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+      }
+      
+      #page-course-search .card-body {
+        color: #fff !important;
+        font-size: 16px;
+        /* Standard font size */
+        font-weight: 700 !important;
+        /* Bold font weight */
+        text-transform: uppercase;
+        /* Uppercase text */
+        cursor: pointer;
+        /* Indicates it's clickable */
+        background-image: linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%);
+        background-size: 200% auto;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: all 0.5s ease;
+        /* Smooth transition for hover effects */
+        display: block;
+        text-decoration: none;
+        vertical-align: middle;
+      }
+      
+      #page-course-search .card-body:hover {
+        background-position: right center;
+        /* Change the direction of the gradient on hover */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Subtle shadow for depth */
+        border-color: #ccc;
+        /* Darker border on hover */
+        color: #fff !important;
+      }
+      
+      #page-course-search .card-body a {
+        text-decoration: none;
+        color: #fff !important;
+      }
+      #page-course-search .highlight{
+        color: #ff9d00
+      }
+      #page-course-search .card-img:hover{
+        transition: all 0.3s ease 0s;
+        padding: 10px;
+        border: 2px solid black;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        transform: scale(1.1);
+      }
+    
+      #page-course-index-category .navbar.fixed-top {
+        background-image: linear-gradient(to right, #b3b3ff, #8080ff);
+         text-transform: uppercase;
+         transition: 0.5s;
+         background-size: 200% auto;
+         box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+       }
+       
+       #page-course-index-category .navbar.fixed-top a {
+         color: black !important;
+         font-size: 16px;
+         /* Standard font size */
+         font-weight: 700 !important;
+         /* Bold font weight */
+       }
+       
+       #page-course-index-category .navbar.fixed-top:hover {
+         background-position: right center;
+         color:linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4)!important;
+         text-decoration: none;
+       }
+    
+    #page-course-index-category .card-body {
+        text-align: center !important;
+      }
+      
+      #page-course-index-category .dashboard-card .dashboard-card-img .course-category {
+        display: none;
+      }
+    
+      #page-course-index-category .card-body a {
+      text-decoration: none;
+      color: #fff !important;
+    }
+    
+    #page-course-index-category .dashboard-card-img {
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    #page-course-index-category .card-body {
+      color: #fff !important;
+      font-size: 16px;
+      /* Standard font size */
+      font-weight: 700 !important;
+      /* Bold font weight */
+      text-transform: uppercase;
+      /* Uppercase text */
+      cursor: pointer;
+      /* Indicates it's clickable */
+      background-image: linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%);
+      background-size: 200% auto;
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: all 0.5s ease;
+      /* Smooth transition for hover effects */
+      display: block;
+      text-decoration: none;
+      vertical-align: middle;
+    }
+    
+    #page-course-index-category .card-body:hover {
+      background-position: right center;
+      /* Change the direction of the gradient on hover */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      /* Subtle shadow for depth */
+      border-color: #ccc;
+      /* Darker border on hover */
+      color: #fff !important;
+    }
+    
+    #page-course-index-category .card-img:hover{
+      transition: all 0.3s ease 0s;
+      padding: 10px;
+      border: 2px solid black;
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      transform: scale(1.1);
+    }
+    
+    #page-course-index-category .card-body a {
+      text-decoration: none;
+      color: #fff !important;
+    }
+    #page-course-index-category .highlight{
+      color: #ff9d00
+    }
+    #page-enrol-index .navbar.fixed-top {
+        background-image: linear-gradient(to right, #b3b3ff, #8080ff);
+         text-transform: uppercase;
+         transition: 0.5s;
+         background-size: 200% auto;
+         box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+       }
+       
+       #page-enrol-index .navbar.fixed-top a {
+         color: black !important;
+         font-size: 16px;
+         /* Standard font size */
+         font-weight: 700 !important;
+         /* Bold font weight */
+       }
+       
+       #page-enrol-index .navbar.fixed-top:hover {
+         background-position: right center;
+         color:linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4)!important;
+         text-decoration: none;
+       }
+    
+    #page-enrol-index .card-body {
+        text-align: center !important;
+      }
+      
+      #page-enrol-index .dashboard-card .dashboard-card-img .course-category {
+        display: none;
+      }
+    
+      #page-enrol-index .card-body a {
+      text-decoration: none;
+      color: #fff !important;
+    }
+    
+    #page-enrol-index .dashboard-card-img {
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    #page-enrol-index .card-body {
+      color: #fff !important;
+      font-size: 16px;
+      /* Standard font size */
+      font-weight: 700 !important;
+      /* Bold font weight */
+      text-transform: uppercase;
+      /* Uppercase text */
+      cursor: pointer;
+      /* Indicates it's clickable */
+      background-image: linear-gradient(to right, #2c3e50 0%, #3498db 51%, #2c3e50 100%);
+      background-size: 200% auto;
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: all 0.5s ease;
+      /* Smooth transition for hover effects */
+      display: block;
+      text-decoration: none;
+      vertical-align: middle;
+    }
+    
+    #page-enrol-index .card-body:hover {
+      background-position: right center;
+      /* Change the direction of the gradient on hover */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      /* Subtle shadow for depth */
+      border-color: #ccc;
+      /* Darker border on hover */
+      color: #fff !important;
+    }
+    
+    #page-enrol-index .card-img:hover{
+      transition: all 0.3s ease 0s;
+      padding: 10px;
+      border: 2px solid black;
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      transform: scale(1.1);
+    }
+    
+    #page-enrol-index .card-body a {
+      text-decoration: none;
+      color: #fff !important;
+    }
+    #page-enrol-index .highlight{
+      color: #ff9d00
+    }
+    
+    #page-my-index .navbar.fixed-top {
+        background-image: linear-gradient(to right, #b3b3ff, #8080ff);
+         text-transform: uppercase;
+         transition: 0.5s;
+         background-size: 200% auto;
+         box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+       }
+       
+       #page-my-index .navbar.fixed-top a {
+         color: black !important;
+         font-size: 16px;
+         /* Standard font size */
+         font-weight: 700 !important;
+         /* Bold font weight */
+       }
+          #page-my-index .navbar.fixed-top:hover {
+         background-position: right center;
+         color:linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4)!important;
+         text-decoration: none;
+       }
+    #page-course-view-topics .navbar.fixed-top {
+        background-image: linear-gradient(to right, #b3b3ff, #8080ff);
+         text-transform: uppercase;
+         transition: 0.5s;
+         background-size: 200% auto;
+         box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+       }
+       
+       #page-course-view-topics .navbar.fixed-top a {
+         color: black !important;
+         font-size: 16px;
+         /* Standard font size */
+         font-weight: 700 !important;
+         /* Bold font weight */
+       }
+       
+       #page-course-view-topics .navbar.fixed-top:hover {
+         background-position: right center;
+         color:linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4)!important;
+         text-decoration: none;
+       }
+    
+       #page-course-view-topics #page-header > div.d-sm-flex.align-items-center > div.mr-auto {
+        justify-content: center; /* Centra los elementos flex horizontalmente */
+        flex: 1; /* Asegura que el contenedor ocupe todo el espacio disponible */
+    }
+    
+    #page-course-view-topics #page-header > div.d-sm-flex.align-items-center > div.mr-auto > div {
+        flex: 1; /* Asegura que el contenedor intermedio también ocupe todo el espacio disponible */
+        display: flex;
+        justify-content: center; /* Centra el contenido del div intermedio */
+    }
+    
+    #page-site-index h2{
+    text-align:center;
+    }
+    
+    #page-site-index .navbar.fixed-top {
+     background-image: linear-gradient(to right, #b3b3ff, #8080ff);
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    #page-site-index .navbar.fixed-top a {
+      color: black !important;
+      font-size: 16px;
+      /* Standard font size */
+      font-weight: 700 !important;
+      /* Bold font weight */
+    }
+    
+    #page-site-index .navbar.fixed-top .usermenu .dropdown-menu{
+    color:black;
+    }
+    
+    #page-site-index .navbar.fixed-top:hover {
+      background-position: right center;
+      color:linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4)!important;
+      text-decoration: none;
+    }
+    
+    #page-wrapper #page-footer {
+      display: none;
+    }
+    
+    #page-footer .copyright .madeby {
+      display: none;
+    }
+    
+    #page-site-index a {}
+    
+    #page-footer .btn-footer-popover {
+      display: none;
+    }
+    
+    #page-footer .column-right {
+      display: none;
+    }
+    
+    #page-site-index .card-body {
+      text-align: center !important;
+    }
+    
+    #page-site-index .dashboard-card .dashboard-card-img .course-category {
+      display: none;
+    }
+    
+    #page-site-index .pagelayout-frontpage .dashboard-card {}
+    
+    #page-site-index main {}
